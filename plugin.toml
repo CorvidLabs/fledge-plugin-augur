@@ -1,0 +1,16 @@
+[plugin]
+name = "fledge-plugin-augur"
+version = "0.1.0"
+description = "🔮 Run augur's deterministic change-risk scoring as `fledge augur` — verdict (proceed/review/block) for any diff, no API key or LLM. Built in Swift on AugurKit. macOS only."
+author = "0xLeif"
+license = "MIT"
+
+[[commands]]
+name = "augur"
+description = "Score a diff's change risk; gate CI / agent loops on the verdict"
+binary = ".build/release/fledge-augur"
+
+[capabilities]
+exec = false
+store = false
+metadata = false
