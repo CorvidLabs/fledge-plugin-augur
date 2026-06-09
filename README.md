@@ -5,7 +5,7 @@ scoring as a first-class `fledge augur` command.
 
 A plugin for [fledge](https://github.com/CorvidLabs/fledge).
 
-augur reads a git diff and emits a verdict — `proceed`, `review`, or `block` —
+augur reads a git diff and emits a verdict (`proceed`, `review`, or `block`)
 from structural signals only (churn, co-change coupling, test gaps, sensitive
 paths, ownership, and the repo's own revert history). **No API key, no LLM.**
 
