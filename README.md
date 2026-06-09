@@ -17,7 +17,7 @@ you do *not* need an external `augur` binary installed.
 - **macOS only** (`AugurKit` targets `.macOS(.v13)`; the plugin builds an arm64/x86_64 macOS binary).
 - A toolchain with Swift 6 to build from source (`swift build -c release`).
 - **Dependency:** the plugin depends on [`CorvidLabs/augur`](https://github.com/CorvidLabs/augur)
-  via Swift Package Manager, pinned to `0.1.0`. `swift build` resolves it; you
+  via Swift Package Manager, `0.1.0` or newer. `swift build` resolves it; you
   need read access to that repository for the build to fetch it.
 
 ## Install
