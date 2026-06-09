@@ -1,0 +1,33 @@
+{
+  "originHash" : "e3027fa0253bc3c90264cfa42b9b24f9a5cacc7e428049562660760980af0c92",
+  "pins" : [
+    {
+      "identity" : "augur",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CorvidLabs/augur.git",
+      "state" : {
+        "revision" : "4cda742baa7fbfd9762cec824f4bd203f8372f7f",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "6a52f3251125d74daf04fcbd5e6f08a75d074382",
+        "version" : "1.8.2"
+      }
+    },
+    {
+      "identity" : "tomldecoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dduan/TOMLDecoder",
+      "state" : {
+        "revision" : "fa1103a62b1c08cc08eabc58dda8b55887ff1622",
+        "version" : "0.4.4"
+      }
+    }
+  ],
+  "version" : 3
+}
