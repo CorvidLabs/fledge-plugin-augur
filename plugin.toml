@@ -1,7 +1,7 @@
 [plugin]
 name = "fledge-plugin-augur"
-version = "0.1.0"
-description = "🔮 Run augur's deterministic change-risk scoring as `fledge augur`: verdict (proceed/review/block) for any diff, no API key or LLM. Built in Swift on AugurKit. macOS only."
+version = "0.2.0"
+description = "🔮 Run augur's deterministic change-risk scoring as `fledge augur`: verdict (proceed/review/block) for any diff, no API key or LLM. Built in Swift on AugurKit. macOS and Linux."
 author = "0xLeif"
 license = "MIT"
 
