@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - Sources/**
+      - Tests/**
+      - Package.swift
+      - Package.resolved
+      - fledge.toml
+      - .github/workflows/ci.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - Sources/**
+      - Tests/**
+      - Package.swift
+      - Package.resolved
+      - fledge.toml
+      - .github/workflows/ci.yml
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Build (debug)
+        run: swift build
+      - name: Build (release)
+        run: swift build -c release
