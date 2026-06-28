@@ -17,7 +17,7 @@ you do *not* need an external `augur` binary installed.
 - **macOS only** (`AugurKit` targets `.macOS(.v13)`; the plugin builds an arm64/x86_64 macOS binary).
 - A toolchain with Swift 6 to build from source (`swift build -c release`).
 - **Dependency:** the plugin depends on [`CorvidLabs/augur`](https://github.com/CorvidLabs/augur)
-  via Swift Package Manager, `0.1.0` or newer. `swift build` resolves it; you
+  via Swift Package Manager, `0.4.1` or newer. `swift build` resolves it; you
   need read access to that repository for the build to fetch it.
 
 ## Install
@@ -35,6 +35,7 @@ fledge augur check --range main..HEAD   # assess a git range
 fledge augur check --json               # machine-readable JSON for agents / CI
 fledge augur check -v                   # show every contributing signal per file
 fledge augur check -C path/to/repo      # assess a repo other than the cwd
+fledge augur check --color always       # force semantic ANSI color
 
 fledge augur gate                       # exit non-zero if verdict >= review (default)
 fledge augur gate --threshold block     # only block on the highest-risk verdict

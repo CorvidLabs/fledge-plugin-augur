@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0
+
+- Track `CorvidLabs/augur` `0.4.1`.
+- Add `fledge augur check --color auto|always|never` for semantic ANSI color parity.
+
 ## 0.1.0
 
 - Initial release
