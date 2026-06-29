@@ -17,10 +17,39 @@ struct FledgeAugur: AsyncParsableCommand {
         sensitive paths, ownership, and revert history) and returns a verdict: \
         proceed, review, or block. No API key or LLM required.
         """,
-        version: "0.1.0",
+        version: "0.3.0",
         subcommands: [Check.self, Gate.self],
         defaultSubcommand: Check.self
     )
+}
+
+// MARK: - Color options
+
+/// When ANSI color is applied to human-readable output.
+enum ColorMode: String, ExpressibleByArgument, CaseIterable {
+    case auto
+    case always
+    case never
+}
+
+/// The `--color` option shared by commands with human-readable output.
+struct ColorOptions: ParsableArguments {
+    @Option(name: .long, help: "Colorize output: auto (TTY only), always, or never. Honors NO_COLOR.")
+    var color: ColorMode = .auto
+
+    /// Resolves whether to emit ANSI color, given the current process context.
+    /// - Returns: `true` when color should be applied.
+    func enabled() -> Bool {
+        switch color {
+        case .never:
+            return false
+        case .always:
+            return true
+        case .auto:
+            if ProcessInfo.processInfo.environment["NO_COLOR"] != nil { return false }
+            return isatty(fileno(stdout)) == 1
+        }
+    }
 }
 
 // MARK: - Shared options
@@ -73,6 +102,8 @@ struct Check: AsyncParsableCommand {
     @Flag(name: [.long, .customShort("v")], help: "Show every contributing signal.")
     var verbose = false
 
+    @OptionGroup var colorOptions: ColorOptions
+
     func run() async throws {
         let (augur, diffScope) = try scope.makeAugur()
         do {
@@ -80,7 +111,7 @@ struct Check: AsyncParsableCommand {
             if json {
                 print(try assessment.jsonString())
             } else {
-                print(Reporter.render(assessment, verbose: verbose))
+                print(Reporter.render(assessment, verbose: verbose, color: colorOptions.enabled()))
             }
         } catch AugurError.noChanges {
             if json {

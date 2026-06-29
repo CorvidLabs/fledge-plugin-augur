@@ -1,13 +1,13 @@
 {
-  "originHash" : "a688ecd28a55d4f5e9dffdcc9373dbdf0be2946264f1703d03cc8415d3b398de",
+  "originHash" : "108796dfd61aab6c24e80132180dbb8fecf71494f6e3c1ffe3bbf9d169a68186",
   "pins" : [
     {
       "identity" : "augur",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CorvidLabs/augur.git",
       "state" : {
-        "revision" : "b8eb416fd637cde0e5290ca6b3a7b80dddb13eb5",
-        "version" : "0.3.0"
+        "revision" : "063292dd203c67dd752260867aace57594f216ec",
+        "version" : "0.4.1"
       }
     },
     {
