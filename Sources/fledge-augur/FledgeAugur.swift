@@ -17,7 +17,7 @@ struct FledgeAugur: AsyncParsableCommand {
         sensitive paths, ownership, and revert history) and returns a verdict: \
         proceed, review, or block. No API key or LLM required.
         """,
-        version: "0.3.0",
+        version: "1.0.0",
         subcommands: [Check.self, Gate.self],
         defaultSubcommand: Check.self
     )

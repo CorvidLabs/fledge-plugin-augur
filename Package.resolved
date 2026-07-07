@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CorvidLabs/augur.git",
       "state" : {
-        "revision" : "063292dd203c67dd752260867aace57594f216ec",
-        "version" : "0.4.1"
+        "revision" : "0c82c1a0100df83cb10a96591cb4912a6c506141",
+        "version" : "1.0.0"
       }
     },
     {
