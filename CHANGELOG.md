@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+- Track `CorvidLabs/augur` `1.0.0`.
+
 ## 0.3.0
 
 - Track `CorvidLabs/augur` `0.4.1`.
