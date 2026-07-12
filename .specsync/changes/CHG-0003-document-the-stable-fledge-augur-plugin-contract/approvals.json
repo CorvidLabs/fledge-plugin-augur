@@ -1,0 +1,11 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "codex",
+      "timestamp": 1783866076,
+      "digest": "5710841acc70fc07ca03a40edc96343ec532df8234cbe591a9b10762614db1be",
+      "note": "Repository interview approved one stable plugin contract."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0002-refresh-locked-augur-1-0-dependency",
+  "slug": "refresh-locked-augur-1-0-dependency",
+  "title": "Refresh locked Augur 1.0 dependency",
+  "description": "Refresh locked Augur 1.0 dependency",
+  "kind": "migration",
+  "state": "implementing",
+  "base_commit": "4cf732190ca27338a60bd3ee7943e8ca9ca334cd",
+  "created_at": 1783831080,
+  "updated_at": 1783831113,
+  "affected_specs": [],
+  "affected_paths": [
+    "Package.resolved"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "Refresh the lockfile to the already-declared stable 1.0 component without changing plugin behavior.",
+  "acceptance_criteria": [
+    "The locked dependency resolves to the declared stable 1.0 release and the native verify lane passes"
+  ],
+  "selected_artifacts": [
+    "context",
+    "research",
+    "design",
+    "plan",
+    "tasks",
+    "testing",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
