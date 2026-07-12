@@ -3,3 +3,7 @@
 build = "swift build -c release"
 test = "swift test"
 check = "swift build -c release && .build/release/fledge-augur check"
+
+[lanes.verify]
+description = "Build the Augur plugin"
+steps = ["build"]
