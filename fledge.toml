@@ -1,9 +1,9 @@
 # fledge.toml: project task definitions
 [tasks]
 build = "swift build -c release"
-test = "swift test"
+test = "bash Tests/plugin_contract_test.sh"
 check = "swift build -c release && .build/release/fledge-augur check"
 
 [lanes.verify]
 description = "Build the Augur plugin"
-steps = ["build"]
+steps = ["build", "test"]
