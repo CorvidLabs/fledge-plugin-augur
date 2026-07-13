@@ -1,3 +1,11 @@
 {
-  "approvals": []
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1783916691,
+      "digest": "3a49a06222e17d840c39cfa68068d44610ad86e2d2199c95fe8a8cee18984e1c",
+      "note": "Reviewed the normalized three-requirement stable plugin contract and deterministic release verification scope."
+    }
+  ]
 }
