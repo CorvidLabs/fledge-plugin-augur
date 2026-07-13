@@ -5,10 +5,10 @@
   "title": "Document the stable fledge augur plugin contract",
   "description": "Document the stable fledge augur plugin contract",
   "kind": "documentation",
-  "state": "implementing",
+  "state": "accepted",
   "base_commit": "aa3211a091e4cd0df6ae50ff3320c8b5097776a1",
   "created_at": 1783866016,
-  "updated_at": 1783866076,
+  "updated_at": 1783904730,
   "affected_specs": [
     "fledge-augur-plugin"
   ],
@@ -20,11 +20,7 @@
   "no_spec_change": false,
   "no_spec_change_rationale": null,
   "acceptance_criteria": [
-    "The stable companion documents registration",
-    "check and gate commands",
-    "argument behavior",
-    "output",
-    "and exit propagation; a deterministic contract test and release build pass; strict SpecSync coverage is 100%."
+    "The stable companion documents registration, check and gate commands, argument behavior, output, and exit propagation; a deterministic contract test and release build pass; strict SpecSync coverage is 100%."
   ],
   "selected_artifacts": [
     "context",

@@ -5,10 +5,10 @@
   "title": "Refresh locked Augur 1.0 dependency",
   "description": "Refresh locked Augur 1.0 dependency",
   "kind": "migration",
-  "state": "implementing",
+  "state": "accepted",
   "base_commit": "4cf732190ca27338a60bd3ee7943e8ca9ca334cd",
   "created_at": 1783831080,
-  "updated_at": 1783831113,
+  "updated_at": 1783904768,
   "affected_specs": [],
   "affected_paths": [
     "Package.resolved"
