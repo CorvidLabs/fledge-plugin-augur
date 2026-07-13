@@ -1,9 +1,9 @@
 {
   "hashes": {
-    "specs/fledge-augur-plugin/requirements.md": "ce09c7f049c63f7d714b616a1013146bbcf5be40b9ff296a4ffb0ba814c7c76e",
-    "plugin.toml": "a82ceb42b875cb3a66e5aeb05b3734835a72e78515e2d8cdf995a6cfeed9bb36",
+    "specs/fledge-augur-plugin/requirements.md": "a72ec4eb5b89ce1e04a6ecf5a677e9c30662b057874cce6748c3a7e4cb63eee6",
     ".specsync/config.toml": "cfc44ab33c684de409393a9cdb32bcb72bc5a06066a22a7dd3f3288be31c1f1a",
-    "Sources/fledge-augur/FledgeAugur.swift": "6a01612e103f96b0df8c0065dedf3fb417b2938ae75da38eebb081f18d891c0f",
-    "specs/fledge-augur-plugin/fledge-augur-plugin.spec.md": "2f1277ab8e2ed1730bf7e6ac3a4cc7ae1e5a0769a0016a9f3e15532b25815e43"
+    "plugin.toml": "a82ceb42b875cb3a66e5aeb05b3734835a72e78515e2d8cdf995a6cfeed9bb36",
+    "specs/fledge-augur-plugin/fledge-augur-plugin.spec.md": "2f1277ab8e2ed1730bf7e6ac3a4cc7ae1e5a0769a0016a9f3e15532b25815e43",
+    "Sources/fledge-augur/FledgeAugur.swift": "6a01612e103f96b0df8c0065dedf3fb417b2938ae75da38eebb081f18d891c0f"
   }
 }
