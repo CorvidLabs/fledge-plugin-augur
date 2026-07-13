@@ -27,3 +27,4 @@ The plugin SHALL propagate gate failures when the assessed verdict reaches the c
 Acceptance Criteria
 
 - `check` reports risk without failing for the verdict, while `gate` exits non-zero at or above its threshold.
+
