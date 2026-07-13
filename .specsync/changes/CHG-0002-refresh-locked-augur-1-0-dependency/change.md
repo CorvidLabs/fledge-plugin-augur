@@ -1,6 +1,6 @@
 ---
 id: CHG-0002-refresh-locked-augur-1-0-dependency
-state: implementing
+state: accepted
 type: migration
 base_commit: 4cf732190ca27338a60bd3ee7943e8ca9ca334cd
 ---

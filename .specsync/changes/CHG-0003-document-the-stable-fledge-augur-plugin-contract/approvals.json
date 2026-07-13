@@ -2,10 +2,17 @@
   "approvals": [
     {
       "gate": "definition",
-      "actor": "codex",
-      "timestamp": 1783866076,
-      "digest": "5710841acc70fc07ca03a40edc96343ec532df8234cbe591a9b10762614db1be",
-      "note": "Repository interview approved one stable plugin contract."
+      "actor": "0xLeif",
+      "timestamp": 1783904690,
+      "digest": "3a49a06222e17d840c39cfa68068d44610ad86e2d2199c95fe8a8cee18984e1c",
+      "note": "Reviewed accurate stable plugin contract metadata, three complete semantic requirements, deterministic contract evidence, and release build coverage."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "0xLeif",
+      "timestamp": 1783904730,
+      "digest": "57cec5f96d50909c6993efd1d8595c86ae84c9148428ad3927147364034bc619",
+      "note": "Approved after strict three-requirement verification, release build, and deterministic plugin contract test."
     }
   ]
 }

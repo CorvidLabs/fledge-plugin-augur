@@ -1,6 +1,6 @@
 ---
 module: fledge-augur-plugin
-version: 1
+version: 2
 status: stable
 files:
   - plugin.toml
@@ -59,3 +59,4 @@ And the command exits 1 for a review or block verdict
 | Version | Date | Changes |
 | --- | --- | --- |
 | 1 | 2026-07-12 | Stable Fledge Augur plugin contract. |
+| 2026-07-13 | CHG-0003-document-the-stable-fledge-augur-plugin-contract: Document the stable fledge augur plugin contract |
